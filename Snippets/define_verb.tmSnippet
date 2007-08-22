@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>define_verb"$1"
+   $2
+end_verb
+</string>
+	<key>name</key>
+	<string>define_verb</string>
+	<key>scope</key>
+	<string>source.hourglass</string>
+	<key>tabTrigger</key>
+	<string>verb</string>
+	<key>uuid</key>
+	<string>ADA6FD31-5FB3-4732-B85C-C77267DF67F7</string>
+</dict>
+</plist>
