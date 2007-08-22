@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Hourglass</string>
+	<key>ordering</key>
+	<array>
+		<string>8FEBD174-ADDB-4E8D-9466-1FCD5623BBF1</string>
+		<string>ADA6FD31-5FB3-4732-B85C-C77267DF67F7</string>
+		<string>1EB611DF-642D-4574-8841-39C3174DE1EB</string>
+		<string>3D622C63-83E7-44EF-AAC0-B2321DD6F548</string>
+		<string>FAEF6737-D70B-4D66-B9D3-BE8A7097BBD4</string>
+		<string>A2E93B0D-F212-402A-A347-52A0BF492A6B</string>
+		<string>188AE581-2278-49CF-982F-C3C1D03835EA</string>
+		<string>260FF374-E57D-4EE1-9436-9CC0E434A495</string>
+		<string>ABB80206-0695-4B44-A622-D9F8A6009A25</string>
+		<string>A4E85F9D-57FD-4551-ADA6-7185299D1856</string>
+		<string>0257A52B-23E3-427D-A7FF-BA7C8F5666BB</string>
+	</array>
+	<key>uuid</key>
+	<string>4A51700B-91B1-4E7F-94B0-29D3FD3AD112</string>
+</dict>
+</plist>

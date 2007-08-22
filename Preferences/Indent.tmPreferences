@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Indent</string>
+	<key>scope</key>
+	<string>source.hourglass</string>
+	<key>settings</key>
+	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>^\s*\}\}\}\s*$|^\s*end_(subroutine|task|verb)\s*$</string>
+		<key>increaseIndentPattern</key>
+		<string>^\s*define_(subroutine|task|verb)|\{\{\{\s*$</string>
+	</dict>
+	<key>uuid</key>
+	<string>0257A52B-23E3-427D-A7FF-BA7C8F5666BB</string>
+</dict>
+</plist>

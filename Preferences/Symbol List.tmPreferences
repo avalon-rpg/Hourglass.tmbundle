@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Definitions</string>
+	<key>scope</key>
+	<string>source.hourglass meta.function entity.name.function</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+	</dict>
+	<key>uuid</key>
+	<string>ABB80206-0695-4B44-A622-D9F8A6009A25</string>
+</dict>
+</plist>
