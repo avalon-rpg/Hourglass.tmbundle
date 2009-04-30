@@ -1,0 +1,59 @@
+{	scopeName = 'source.hourglass';
+	firstLineMatch = '^\;(?:[ \t]+)(?:.*)$';
+	fileTypes = ( );
+	foldingStartMarker = 'define_(task|subroutine|verb)|\{\{\{\s*$';
+	foldingStopMarker = 'end_(task|subroutine|verb)|\s*\}\}\}';
+	patterns = (
+		{	name = 'comment.line.first-line.hourglass';
+			match = '^(\;)\s*(.*)';
+			captures = {
+				1 = { name = 'punctuation.definition.comment.hourglass'; };
+				2 = { name = 'comment.line.hourglass'; };
+			};
+		},
+		{	name = 'comment.line.inline.hourglass';
+			match = '\s*(\;)\s*(.*)$';
+			captures = {
+				1 = { name = 'punctuation.definition.comment.hourglass'; };
+				2 = { name = 'comment.line.inline.hourglass'; };
+			};
+		},
+		{	name = 'meta.function.hourglass';
+			match = '^\s*(define_(?:subroutine|task|label|verb))(\")([^"]+)(\")\s*$';
+			captures = {
+				1 = { name = 'keyword.control.define.hourglass'; };
+				2 = { name = 'punctuation.definition.function.hourglass'; };
+				3 = { name = 'entity.name.function.hourglass'; };
+				4 = { name = 'punctuation.definition.function.hourglass'; };
+			};
+		},
+		{	name = 'meta.function-call.hourglass';
+			match = '(goto|gosub|\!)(\")([^"]+)(\")';
+			captures = {
+				1 = { name = 'keyword.control.jump.hourglass'; };
+				2 = { name = 'punctuation.definition.function.hourglass'; };
+				3 = { name = 'entity.name.function.hourglass'; };
+				4 = { name = 'punctuation.definition.function.hourglass'; };
+			};
+		},
+		{	name = 'constant.other.hourglass';
+			match = '(\#[A-Z]+)\b';
+			captures = { 1 = { name = 'constant.name.hourglass'; }; };
+		},
+		{	name = 'string.quoted.literal.hourglass';
+			match = '\"[^"]+\"';
+		},
+		{	name = 'constant.numeric.hourglass';
+			match = '\b\d+\b';
+		},
+		{	name = 'variable.other.normal.hourglass';
+			match = '\b[a-z][[:alnum:]]+\b';
+		},
+		{	name = 'variable.other.string.hourglass';
+			match = '\$[a-z][[:alnum:]]+\b';
+		},
+		{	name = 'keyword.control.hourglass';
+			match = '(?<!\.)\b(while|if|then|return|out_\w+|end_\w+)\b(?![?!])';
+		},
+	);
+}
