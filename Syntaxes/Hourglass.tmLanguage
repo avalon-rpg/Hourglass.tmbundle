@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
@@ -22,9 +22,14 @@
 					<key>name</key>
 					<string>punctuation.definition.comment.hourglass</string>
 				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>comment.line.hourglass</string>
+				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\;\s*(.*)</string>
+			<string>^(\;)\s*(.*)</string>
 			<key>name</key>
 			<string>comment.line.first-line.hourglass</string>
 		</dict>
@@ -36,9 +41,14 @@
 					<key>name</key>
 					<string>punctuation.definition.comment.hourglass</string>
 				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>comment.line.inline.hourglass</string>
+				</dict>
 			</dict>
 			<key>match</key>
-			<string>\s*\;\s*(.*)$</string>
+			<string>\s*(\;)\s*(.*)$</string>
 			<key>name</key>
 			<string>comment.line.inline.hourglass</string>
 		</dict>
@@ -53,11 +63,21 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
+					<string>punctuation.definition.function.hourglass</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
 					<string>entity.name.function.hourglass</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.function.hourglass</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\s*(define_(?:subroutine|task|label|verb))\"([^"]+)\"\s*$</string>
+			<string>^\s*(define_(?:subroutine|task|label|verb))(\")([^"]+)(\")\s*$</string>
 			<key>name</key>
 			<string>meta.function.hourglass</string>
 		</dict>
@@ -72,13 +92,23 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
+					<string>punctuation.definition.function.hourglass</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
 					<string>entity.name.function.hourglass</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.function.hourglass</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(goto|gosub|\!)\"([^"]+)\"</string>
+			<string>(goto|gosub|\!)(\")([^"]+)(\")</string>
 			<key>name</key>
-			<string>meta.jump.hourglass</string>
+			<string>meta.function-call.hourglass</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -86,13 +116,19 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.hourglass</string>
+					<string>constant.name.hourglass</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(\#[A-Z]+)\b</string>
 			<key>name</key>
-			<string>constant.hourglass</string>
+			<string>constant.other.hourglass</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\"[^"]+\"</string>
+			<key>name</key>
+			<string>string.quoted.literal.hourglass</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -102,7 +138,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b\$[[:alnum:]]+\b</string>
+			<string>\b[a-z][[:alnum:]]+\b</string>
+			<key>name</key>
+			<string>variable.other.normal.hourglass</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\$[a-z][[:alnum:]]+\b</string>
 			<key>name</key>
 			<string>variable.other.string.hourglass</string>
 		</dict>

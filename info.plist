@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>B183F9E4-C978-4B09-9087-CCD596451A00</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>B183F9E4-C978-4B09-9087-CCD596451A00</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>F2320AC8-7B51-42F4-B5B5-15E0A653141B</string>
+					<string>C6F516E5-B98C-4F49-9AD9-BE21B6FA5714</string>
+				</array>
+				<key>name</key>
+				<string>Builtins</string>
+			</dict>
+			<key>C6F516E5-B98C-4F49-9AD9-BE21B6FA5714</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>FAEF6737-D70B-4D66-B9D3-BE8A7097BBD4</string>
+				</array>
+				<key>name</key>
+				<string>End/Out..</string>
+			</dict>
+			<key>F2320AC8-7B51-42F4-B5B5-15E0A653141B</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>8FEBD174-ADDB-4E8D-9466-1FCD5623BBF1</string>
+					<string>ADA6FD31-5FB3-4732-B85C-C77267DF67F7</string>
+					<string>1EB611DF-642D-4574-8841-39C3174DE1EB</string>
+					<string>3D622C63-83E7-44EF-AAC0-B2321DD6F548</string>
+				</array>
+				<key>name</key>
+				<string>Define...</string>
+			</dict>
+		</dict>
+	</dict>
 	<key>name</key>
 	<string>Hourglass</string>
 	<key>ordering</key>
